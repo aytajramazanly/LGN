@@ -1,0 +1,52 @@
+#login{
+    margin: 7% 0 10%;
+    .login-box{
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .alert-incorrect-login{
+            font-size: 15px;
+            color: red;
+            width: 240px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        label{
+            width: 90px;
+            text-align: center;
+        }
+        input{
+            border: 0.5px solid;
+            border-radius: 5px;
+            outline: none;
+            padding: 10px 15px;
+            font-size: 15px;
+        }
+        .login-btn{
+            width: 100px;
+            border: 1px solid $primary-color;
+            height: 35px;
+            background-color: #fff;
+            color: $dark-color;
+            transition: 0.7s;
+            &:hover{
+                background-color: $primary-color;
+                color: #fff;
+            }
+        }
+        .new-user{
+            .register{
+                font-size: 12px;
+                width: 80px;
+                height: 27px;
+                border: 1px solid;
+                background-color: $primary-color;
+                color: white;
+                transition: 0.7s;
+            }
+        }
+    }
+}
